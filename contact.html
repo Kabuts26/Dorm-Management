@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style type="text/css">
+*{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+#abc{
+  width:100%;
+  height:100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: #0005;
+  line-height: 50px;
+
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#088;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+a:active{
+	background-color:#088;
+}.btn
+{
+  width: 75px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px;
+  margin: 15px auto;
+  background-color: #4CAF50;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  }
+  ::placeholder{
+    color: white;
+  }
+.box{
+
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  margin-top: auto;
+  background-color:rgb(34,139,34,.7);
+  /*background-color: rgba(0, 0, 0, .83);*/
+  border-radius: 10px;
+  color: white;
+  text-align: center;   
+  }
+
+.box-img{
+  border-radius: 50%;
+  }
+
+.box>h5{
+  letter-spacing: 2px;
+  }
+
+.box p{
+  text-align: center;
+  }
+
+.box ul{
+  margin: 0;
+  padding: 0;
+  }
+
+.box li{
+  margin: 5px;
+  display: block;
+  list-style: none;
+  }
+
+.box li a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: all-ease ease-in-out 250ms;
+  }
+
+.box li a:hover{
+  color:#b9b9b9;
+}
+
+.textbox{
+margin: 0 auto;
+width: 500px;
+overflow: hidden;
+margin: 8px 0 15px 250px;
+padding: 8px 0;
+border-bottom: solid 2px rgb(124, 65, 130);
+}
+
+.textbox i{
+width: 26px;
+text-align: center;
+float: left;
+}
+
+input[type=text]{
+background: none;
+border: none;
+outline: none;
+color: white;
+font-size: 15px;
+width: 80%;
+margin: 0 10px;
+float: left;
+}
+</style>
+<body>
+<div id="abc">
+    <nav>
+        <ul>
+            <li><a href="homepage.php">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <div class="box">
+        <h1>Get in touch with us</h1>
+        <p>Please do not hesitate to reach out, and we'll answer any queries that may concern you</p>
+        <form action="contact.html" method="get">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="textbox">
+                <i class="fas fa-phone" aria-hidden="true"></i> 
+                <input type="text" placeholder="Enter your phone number" required>
+            </div>
+    
+            <div class="textbox">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter your email" required>
+            </div>
+
+            <div class="textbox">
+                <i class="far fa-comment" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter message" required> 
+            </div>
+          <input class="btn" type="submit" name="create" onclick="myFunction()">
+        </form>
+
+        <ul>
+            <li><a href="https://www.facebook.com/CasaSoleilOfficial" target="_blank"><i class="fab fa-facebook-square" ></i>   Casa Soleil</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>    0945-819-2989</a></li>
+            <li><a href="#"><i class="far fa-map"></i>  Sitio Ilang Ilang Brgy. Bubukal Santa Cruz Laguna (Near LSPU Gate 2)</a></li> 
+        </ul> 
+    </div>
+
+    <script>
+        function myFunction() {
+          alert("Thank you for reaching us! We will answer your queries as soon as possible");
+        }
+        </script>
+</div>
+</body>
+</html>
